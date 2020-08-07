@@ -1,0 +1,21 @@
+.bg-cover
+{
+height: 600px;
+background-image: url(../../assets/Imagenes/computadoraportatil.jpg);
+background-blend-mode: darken;
+background-color: rgba(0, 0, 0,0.5);
+
+}
+
+.textoparrafo
+{
+font-family: 'Libre Baskerville', serif;
+opacity: 90%;
+}
+
+.boton
+{
+min-width: 200px;
+height: 50px;
+background: #2D6DFA;
+}
