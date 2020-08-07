@@ -18,4 +18,11 @@ opacity: 90%;
 min-width: 200px;
 height: 50px;
 background: #2D6DFA;
+opacity: 50%;
 }
+
+.boton:hover
+{
+opacity: 100%;
+}
+

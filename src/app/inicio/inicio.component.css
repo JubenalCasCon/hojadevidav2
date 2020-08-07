@@ -1,0 +1,23 @@
+.barrainicial
+{
+background: #FED0C7;
+
+
+
+}
+
+
+.colorcontenedor
+{
+background: #FA4620;
+font-family: 'Open Sans', sans-serif;
+min-width: 250px;
+min-height: 3em;
+cursor: pointer;
+}
+
+.rounded-full
+{
+max-width: 60%;
+
+}

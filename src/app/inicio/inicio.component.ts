@@ -7,6 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioComponent implements OnInit {
 
+imagenperfil:string="assets/Imagenes/perfil_benjamin.png";
+
+public icontenedores:any[]=[
+
+  {
+    rotulo:"Repositorios"
+  },
+
+  {
+    rotulo:"Diseños"
+  },
+
+  {
+    rotulo:"Notas"
+  }
+
+]
+
   constructor() { }
 
   ngOnInit(): void {
