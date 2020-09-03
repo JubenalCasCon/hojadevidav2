@@ -1,0 +1,13 @@
+<div class="container-fluid mx-auto">
+    <div class=" text-center ">
+    <p class="lg:text-5xl text-3xl italic" style="font-family: 'Libre Baskerville', serif;">Mis Proyectos</p>
+    <div class="lg:text-4xl text-3xl italic pt-5 pb-5 flex justify-center flex-col items-center" style="font-family: Open Sans', sans-serif;" *ngFor="let tproyecto of tproyectos">
+        <p>{{tproyecto.titulo}}</p>
+        <img src="{{tproyecto.imagen}}">
+        <p class="p-5 m-3 w-8/12 lg:w-1/2">{{tproyecto.contenido}}</p>
+        <a class="enlace">Ir</a>
+    </div>
+        
+</div>
+</div>
+

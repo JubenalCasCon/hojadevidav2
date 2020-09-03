@@ -1,0 +1,168 @@
+<!-- Referencias Ug
+ -->
+<div class="container-fluid mx-auto p-5">
+    <div class=" text-center ">
+        <p class="lg:text-5xl text-3xl italic" style="font-family: 'Libre Baskerville', serif;">Referencias</p>
+        <div class="container-fluid w-50 flex justify-center">
+            <div class="text-uppercase text-4xl font-bold flex justify-center text-center flex-col">
+                <p>Universidad de Guanajuato</p>
+                <img [src]="imagenug" class="object-contain" alt="">
+                <a (click)="cambiarug()"><i *ngIf="mostrarug==true" class="text-center fa fa-eye-slash">Ocultar</i></a>
+                <a (click)="cambiarug()"><i *ngIf="mostrarug==false" class="text-center fa fa-eye">Ver</i></a>
+
+            </div>
+        </div>
+        <div [ngClass]="contenedorsecundario" *ngIf="mostrarug==true">
+
+            <div class=" pt-2 pb-2 m-2 inline text-center uppercase text-3xl flex justify-center flex-col">
+                <p>Universidad de Guanajuato</p>
+                <p>Enero2017-Diciembre2018</p>
+                <div class="text-2xl  w-full">
+                    <ul class="inline">
+                    <li>Administración de Proyectos web usando herramientas UML y diseño de algoritmos</li>
+                    <li>Modelado e implementación de bases de datos relacionales</li>
+                    <li>Desarrollo de Proyectos Web usando uando Html, css y php</li>
+                    <li>Encargado  del area de Soporte Técnico en el area DICIVA</li>
+                </ul>
+                </div>
+
+                <div class="text-blue-400 hover:text-blue-500">
+                    <a href="https://drive.google.com/file/d/1-TPVAw8XScQ0CQgvO04dkr-jigo-PlMm/view?usp=sharing" target="_blank">Link</a>
+                </div>
+            </div>
+            <section>
+                <div class="container mb-5 mt-5 px-2 py-4 mx-auto my-2 flex justify-center ">
+                    <div class="slider md:w-1/2 w-full">
+                        <div class="slider-container flex flex-row ">
+                            <img src="{{instituciones[0].imagen1}}">
+                            <img src="{{instituciones[0].imagen2}}">
+                            <img src="{{instituciones[0].imagen3}}">
+                            <img src="{{instituciones[0].imagen4}}">
+                            <img src="{{instituciones[0].imagen5}}">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+
+    </div>
+</div>
+
+<!-- 
+Referencias Sacti -->
+
+<div class="container-fluid mx-auto p-5">
+    <div class=" text-center ">
+        <div class="container-fluid w-50 flex justify-center">
+            <div class="text-uppercase text-4xl font-bold flex justify-center text-center flex-col">
+                <p>Sacti Centro de Negocios</p>
+                <img [src]="imagensacti" class="object-contain image" alt="">
+                <a (click)="cambiarsacti()"><i *ngIf="mostrarsacti==true" class="text-center fa fa-eye-slash">Ocultar</i></a>
+                <a (click)="cambiarsacti()"><i *ngIf="mostrarsacti==false" class="text-center fa fa-eye">Ver</i></a>
+
+            </div>
+        </div>
+        <div [ngClass]="contenedorsecundario" *ngIf="mostrarsacti==true">
+
+            <div class=" pt-2 pb-2 m-2 text-center uppercase text-3xl flex justify-center flex-col">
+                <p>Sacti</p>
+                <p>Abril2019-Abril2020</p>
+                <div class="text-2xl">
+                    <ul class="inline">
+                    <li>Administración, planeción de Proyectos web usando herramientas UML y diseño de algoritmos</li>
+                    <li>Modelado e implementación de bases de datos relacionales</li>
+                    <li>Desarrollo de Proyectos Web en Framework Angular, html, css </li>
+                    <li>Soporte técnico a equipos de computo</li>
+                </ul>
+                </div>
+
+                <div class="text-blue-400 hover:text-blue-500">
+                    <a href="https://www.sacti.mx/" target="_blank">Link</a>
+                </div>
+            </div>
+            <section>
+                <div class="container mb-5 mt-5 px-2 py-4 mx-auto my-2 flex justify-center ">
+                    <div class="slider md:w-1/2 w-full">
+                        <div class="slider-container flex flex-row ">
+                            <img src="{{instituciones[1].imagen1}}">
+                            <img src="{{instituciones[1].imagen2}}">
+                            <img src="{{instituciones[1].imagen3}}">
+                            <img src="{{instituciones[1].imagen4}}">
+                            <img src="{{instituciones[1].imagen5}}">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+
+    </div>
+</div>
+
+
+<!-- 
+Referencias Inocisa -->
+
+<div class="container-fluid mx-auto p-5">
+    <div class=" text-center ">
+          <div class="container-fluid w-50 flex justify-center">
+            <div class="text-uppercase text-4xl font-bold flex justify-center text-center flex-col">
+                <p>Instituto del Noroeste en en Ciencias de la Salud</p>
+                <img [src]="imageninocisa" class="object-contain" alt="">
+                <a (click)="cambiarinocisa()"><i *ngIf="mostrarinocisa==true" class="text-center fa fa-eye-slash">Ocultar</i></a>
+                <a (click)="cambiarinocisa()"><i *ngIf="mostrarinocisa==false" class="text-center fa fa-eye">Ver</i></a>
+
+            </div>
+        </div>
+        <div [ngClass]="contenedorsecundario" *ngIf="mostrarinocisa==true">
+
+            <div class=" pt-2 pb-2 m-2 text-center uppercase text-3xl flex justify-center flex-col">
+                <p>Instituto del Noroeste en Ciencias de La Salud</p>
+                <p>Enero2015-Diciembre2015 Enero2019-Agosto2020</p>
+                <div class="text-2xl">
+                    <ul class="inline">
+                    <li >Encargado del departamento de informática </li>
+                    <li>Desarrollo e implementación del sitio web de la Empresa</li>
+                    <li>implementación de Offimatica para optimización de procesos dentro de la empresa</li>
+                    <li>Encargado del area de Soporte Técnico</li>
+                </ul>
+                    <li></li>
+                </div>
+
+                <div class="text-blue-400 hover:text-blue-500">
+                    <a href="https://www.facebook.com/inocisalosmochis/" target="_blank">Link</a>
+                </div>
+            </div>
+
+            <section>
+                <div class="container mb-5 mt-5 px-2 py-4 mx-auto my-2 flex justify-center ">
+                    <div class="slider md:w-1/2 w-full">
+                        <div class="slider-container flex flex-row ">
+                            <img src="{{instituciones[2].imagen1}}">
+                            <img src="{{instituciones[2].imagen2}}">
+                            <img src="{{instituciones[2].imagen3}}">
+                            <img src="{{instituciones[2].imagen4}}">
+                            <img src="{{instituciones[2].imagen5}}">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+<!-- Adicional -->
+
+    
+    
+    
+    
+   
+

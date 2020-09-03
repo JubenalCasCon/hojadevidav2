@@ -1,0 +1,13 @@
+.caja
+{
+width: 16rem;
+}
+
+.colorcontenedor
+{
+background:#fa4620;
+font-family: Open Sans, sans-serif ;
+min-width: 150px;
+height: 2em;
+cursor: pointer;
+}
