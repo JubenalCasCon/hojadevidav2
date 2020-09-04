@@ -56,9 +56,9 @@ imagensacti:string="assets/Imagenes/Sacti.jpg"
 imageninocisa:string="assets/Imagenes/1.jpg"
 
 /* clases enlazadas */
-contenedorprincipal:any[]=['container-fluid', 'mx-auto', 'px-auto','pt-2','pb-2','h-auto','border-2','border-black','flex','flex-col']
+contenedorprincipal:any[]=['container-fluid', 'mx-auto', 'px-auto','pt-2','pb-2','h-auto','flex','flex-col','justify-center','items-center','text-center']
 
-contenedorsecundario:any[]=['container', 'flex', 'flex-col', 'items-center','justify-center','px-3','py-4','m-2']
+contenedorsecundario:any[]=['container', 'flex', 'flex-col', 'items-center','justify-center','px-3','py-4','m-2','text-center']
 
 /* Elementos ocultos */
 public mostrarug:boolean

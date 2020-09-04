@@ -1,12 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-
+import {cargaranimacion} from '../animations/carga.animations';
+import { ThrowStmt } from '@angular/compiler';
 @Component({
   selector: 'app-inicio',
   templateUrl: './inicio.component.html',
-  styleUrls: ['./inicio.component.css']
+  styleUrls: ['./inicio.component.css'],
+  animations: [cargaranimacion()]
 })
 export class InicioComponent implements OnInit {
 
+imagenportada:string="assets/Imagenes/imagenportada.jpg"
 
 
 public icontenedores:any[]=[
@@ -25,10 +28,9 @@ public icontenedores:any[]=[
 
 ]
 
-public primerparrafo:string="Lorem ipsum dolor, sit amet consectetur adipisicing elitEos sequi aperiam numquam cupiditate. libero nesciunt voluptatibus autem iusto possimus velit corrupti ducimus voluptatem eius eveniet dolor amet nobis, ab dicta!";
-public segundoparrafo:string="Lorem ipsum dolor, sit amet consectetur adipisicing elitEos sequi aperiam numquam cupiditate. libero nesciunt voluptatibus autem iusto possimus velit corrupti ducimus voluptatem eius eveniet dolor amet nobis, ab dicta!";
-public tercerparrafo:string="Lorem ipsum dolor, sit amet consectetur adipisicing elitEos sequi aperiam numquam cupiditate. libero nesciunt voluptatibus autem iusto possimus velit corrupti ducimus voluptatem eius eveniet dolor amet nobis, ab dicta!";
-
+public primerparrafo:string="Soy un desarrollador web enfocado en el frontend, la UX y la UI, realizando mis diseños en Abode XD y  programación en HTML con apoyo del Framework Angular.A lo largo de mi  ";
+public segundoparrafo:string="carrera  he trabajado en diferentes lugares, he trabajado como administrador de proyectos Informáticos, desarrollando soluciones para todo tipo de empresas.";
+public tercerparrafo:string="Para todo problema , siempre tengo una solución que se puede desarrollar"
 
 
 imagenperfil:string="assets/Imagenes/perfil_benjamin.png";
@@ -43,6 +45,9 @@ cgrid:string[]=["grid", "grid-cols-1", "md:grid-cols-3", "gap-6", "md:p-3"]
   constructor() { }
 
   ngOnInit(): void {
+    
+
   }
 
+  
 }

@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuiensoyComponent implements OnInit {
 
+  videoportada:string="assets/Imagenes/presentacion.mp4"
+
   constructor() { }
 
   ngOnInit(): void {

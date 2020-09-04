@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 import { NgModule } from '@angular/core';
 import {RouterModule,Routes} from '@angular/router'
 import { AppRoutingModule } from './app-routing.module';
@@ -13,6 +14,7 @@ import { EstudiosComponent } from './estudios/estudios.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { DocumentosComponent } from './documentos/documentos.component';
 import { PaginaprincipalComponent } from './paginaprincipal/paginaprincipal.component';
+import { from } from 'rxjs';
 
 
 const routes:Routes=[{path:'',component:PaginaprincipalComponent}]
@@ -35,6 +37,7 @@ const routes:Routes=[{path:'',component:PaginaprincipalComponent}]
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(routes),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
