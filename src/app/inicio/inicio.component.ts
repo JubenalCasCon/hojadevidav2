@@ -1,13 +1,25 @@
 import { Component, OnInit } from '@angular/core';
-import {cargaranimacion} from '../animations/carga.animations';
-import { ThrowStmt } from '@angular/compiler';
+import {cargaranimacion} from '../animations/carga.animations'
 @Component({
   selector: 'app-inicio',
   templateUrl: './inicio.component.html',
   styleUrls: ['./inicio.component.css'],
-  animations: [cargaranimacion()]
+  animations:[]
 })
 export class InicioComponent implements OnInit {
+
+_elements:string[]=['#8CA6ff','#FFAF99','#FFD666','#80DFFF','#73FFD5']; 
+elements:string[]= this._elements;
+
+
+
+
+
+
+
+
+
+
 
 imagenportada:string="assets/Imagenes/imagenportada.jpg"
 

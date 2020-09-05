@@ -8,7 +8,6 @@
 </div>
 
 
-
 <div class="container mx-auto px-4 py-2 m-3">
     <div [ngClass]="cbarrainicial" >
         
@@ -44,4 +43,8 @@
 </div>
 
  <p class="font-bold md:text-4xl">Benjamín Castañeda</p>
+</div>
+
+<div  class=" text-center" style="min-height: 30px;">
+  <div *ngFor="let element of elements" class="circle" [ngStyle]="{'background-color': element}"></div>
 </div>
