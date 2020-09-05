@@ -19,7 +19,7 @@ import{trigger,style,transition,animate, state} from '@angular/animations';
       })),
       state('1',style({
         
-       height:'55em',
+       height:'45em',
        background:'#CDCDCD',
        borderRadius:'5%',
 boxShadow:'30px',
@@ -27,7 +27,7 @@ color:'black'
        
       
       })),
-      transition('0 => 1',animate('1s ease-in')),
+      transition('0 => 1',animate('3s ease-in')),
       transition('1 => 0',animate('3s  ease-out'))
 
     ])

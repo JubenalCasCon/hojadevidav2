@@ -1,64 +1,182 @@
-<!-- Imagen y link para mostrar informacion -->
-<p class="lg:text-5xl text-3xl italic text-center" style="font-family: 'Libre Baskerville', serif;">Referencias</p>
-<div class="container-fluid w-50 flex justify-center">
 
+<p class="lg:text-5xl text-3xl italic text-center" style="font-family: 'Libre Baskerville', serif;">Referencias</p>
+
+<!-- Referencias Ug
+ -->
+ <!-- Imagen y link que activa la animación -->
+<div class="container-fluid w-50 flex justify-center">
     <div class="text-uppercase text-4xl font-bold flex justify-center text-center flex-col">
         <p>Universidad de Guanajuato</p>
         <img [src]="imagenug" class="object-contain" alt="">
-        <a (click)="cambiarug()">Cambiar<i class="fa "
+        <a (click)="cambiarug()">Ver<i class="fa "
                 [ngClass]="{'fa-eye': !mostrarug, 'fa-eye-slash': mostrarug}"></i></a>
+    </div>
+</div>
+<!-- Contenedor Principal --> 
+<div [ngClass]="contenedorprincipal">
+    <div [@showUp]="mostrarug" [ngClass]="contenedorsecundario">
+        <div *ngIf="mostrarug==true"
+            class=" pt-2 pb-2 m-2 inline text-center uppercase text-base md:text-3xl flex justify-center flex-col">
+<!-- Carrusel -->
+            <div class="md:container container-fluid       md:mb-5 md:mt-5 px-2 py-4 mx-auto my-2 flex justify-center ">
+                <div class="slider md:w-5/12 3/12  p-0 mt-1 w-full">
+                    <div class="slider-container  flex flex-row ">
+                        <img src="{{instituciones[0].imagen1}}">
+                        <img src="{{instituciones[0].imagen2}}">
+                        <img src="{{instituciones[0].imagen3}}">
+                        <img src="{{instituciones[0].imagen4}}">
+                        <img src="{{instituciones[0].imagen5}}">
+                    </div>
+                </div>
+            </div>
+         <!-- ******* --> 
+         
+         <!-- Contenido del div animado -->
+            <div class="text-sm md:text-2xl text-justify flex justify-center flex-col items-center pb-4 ">
+                <p>Universidad de Guanajuato</p>
+                <p class="font-black">Enero2017-Diciembre2018</p>
+
+                <p class="text-2xl text-center md:text-4xl font-black">Actividades Realizadas</p>
+                <li>Administración de Proyectos web usando herramientas UML y diseño de algoritmos</li>
+                <li>Modelado e implementación de bases de datos relacionales</li>
+                <li>Desarrollo de Proyectos Web usando uando Html, css y php</li>
+                <li>Encargado del area de Soporte Técnico en el area DICIVA</li>
+                <div class="text-blue-400 hover:text-blue-500 h-16">
+                    <a class="efectolink"
+                        href="https://drive.google.com/file/d/1-TPVAw8XScQ0CQgvO04dkr-jigo-PlMm/view?usp=sharing"
+                        target="_blank">Link</a>
+                </div>
+
+            </div>
+<!-- ***** -->
+
+
+
+
+        </div>
+
 
     </div>
 </div>
 
+
+<!-- Referencias Sacti
+ -->
+ <!-- Imagen y link que activa la animación -->
+ <div class="container-fluid w-50 flex justify-center">
+    <div class="text-uppercase text-4xl font-bold flex justify-center text-center flex-col">
+        <p>Instituto del Noroeste en Ciencias de la Salud Los Mochis</p>
+        <img [src]="imagensacti" class="object-contain" alt="">
+        <a (click)="cambiarsacti()">Ver<i class="fa "
+                [ngClass]="{'fa-eye': !mostrarsacti, 'fa-eye-slash': mostrarsacti}"></i></a>
+    </div>
+</div>
+<!-- Contenedor Principal --> 
 <div [ngClass]="contenedorprincipal">
-          <div [@showUp]="mostrarug" [ngClass]="contenedorsecundario">
-              <div *ngIf="mostrarug==true"class=" pt-2 pb-2 m-2 inline text-center uppercase text-3xl flex justify-center flex-col">
-                
-                <div class="container  mb-5 mt-5 px-2 py-4 mx-auto my-2 flex justify-center ">
-                    <div class="slider md:w-5/12  p-3 w-full">
-                        <div class="slider-container  flex flex-row ">
-                            <img src="{{instituciones[0].imagen1}}">
-                            <img src="{{instituciones[0].imagen2}}">
-                            <img src="{{instituciones[0].imagen3}}">
-                            <img src="{{instituciones[0].imagen4}}">
-                            <img src="{{instituciones[0].imagen5}}">
-                        </div>
+    <div [@showUp]="mostrarsacti" [ngClass]="contenedorsecundario">
+        <div *ngIf="mostrarsacti==true"
+            class=" pt-2 pb-2 m-2 inline text-center uppercase text-base md:text-3xl flex justify-center flex-col">
+<!-- Carrusel -->
+            <div class="md:container container-fluid       md:mb-5 md:mt-5 px-2 py-4 mx-auto my-2 flex justify-center ">
+                <div class="slider md:w-5/12 3/12  p-3 mt-5 w-full">
+                    <div class="slider-container  flex flex-row ">
+                        <img src="{{instituciones[1].imagen1}}">
+                        <img src="{{instituciones[1].imagen2}}">
+                        <img src="{{instituciones[1].imagen3}}">
+                        <img src="{{instituciones[1].imagen4}}">
+                        <img src="{{instituciones[1].imagen5}}">
                     </div>
                 </div>
-                <div class="text-2xl text-justify flex justify-center flex-col items-center ">
-                    <p>Universidad de Guanajuato</p>
-                <p class="font-black">Enero2017-Diciembre2018</p>
-                    
-                        <p class="text-4xl font-black">Actividades Realizadas</p>
-                        <li>Administración de Proyectos web usando herramientas UML y diseño de algoritmos</li>
-                        <li>Modelado e implementación de bases de datos relacionales</li>
-                        <li>Desarrollo de Proyectos Web usando uando Html, css y php</li>
-                        <li>Encargado del area de Soporte Técnico en el area DICIVA</li>
-                    
-                </div>
-                    <div class="text-blue-400 hover:text-blue-500 h-16">
-                        <a class="efectolink " href="https://drive.google.com/file/d/1-TPVAw8XScQ0CQgvO04dkr-jigo-PlMm/view?usp=sharing"
-                            target="_blank">Link</a>
-                    </div>
-
-
-                    
-                </div>
-
-                
             </div>
+         <!-- ******* --> 
+         
+         <!-- Contenido del div animado -->
+            <div class="text-sm md:text-2xl text-justify flex justify-center flex-col items-center pb-4 ">
+                <p>Inocisa Los Mochis</p>
+                <p class="font-black">Abril-2019-Abril2020</p>
+
+                <p class="text-2xl text-center md:text-4xl font-black">Actividades Realizadas</p>
+                <li>Administración, planeción de Proyectos web usando herramientas UML y diseño de algoritmos</li>
+                    <li>Modelado e implementación de bases de datos relacionales</li>
+                    <li>Desarrollo de Proyectos Web en Framework Angular, html, css </li>
+                    <li>Soporte técnico a equipos de computo</li>
+                <div class="text-blue-400 hover:text-blue-500 h-16 p-2">
+                    <a class="efectolink" href="https://www.sacti.mx/" target="_blank">Link</a>
+
+                </div>
+
+            </div>
+
+            
+
         </div>
 
-
-
-
-
-<!-- 
-carrusel
-<section>
+    </div>
     
-</section>
- -->
+</div>
+<!-- ***** -->
 
-<!-- Adicional -->
+
+
+
+
+
+
+
+<!-- Referencias Inocisa
+ -->
+ <!-- Imagen y link que activa la animación -->
+ <div class="container-fluid w-50 flex justify-center">
+    <div class="text-uppercase text-4xl font-bold flex justify-center text-center flex-col">
+        <p>Instituto del Noroeste en Ciencias de la Salud</p>
+        <img [src]="imageninocisa" class="object-contain" alt="">
+        <a (click)="cambiarinocisa()">Ver<i class="fa "
+                [ngClass]="{'fa-eye': !mostrarinocisa, 'fa-eye-slash': mostrarinocisa}"></i></a>
+    </div>
+</div>
+
+<!-- Contenedor Principal --> 
+<div [ngClass]="contenedorprincipal">
+    <div [@showUp]="mostrarinocisa" [ngClass]="contenedorsecundario">
+        <div *ngIf="mostrarinocisa==true"
+            class="   m-2 inline text-center uppercase text-base md:text-3xl flex justify-center flex-col">
+<!-- Carrusel -->
+            <div class="md:container container-fluid       px-2 py-4 mx-auto pb-2 flex justify-center ">
+                <div class="slider md:w-5/12 3/12  p-3 mt-5 w-full">
+                    <div class="slider-container  flex flex-row ">
+                        <img src="{{instituciones[2].imagen1}}">
+                        <img src="{{instituciones[2].imagen2}}">
+                        <img src="{{instituciones[2].imagen3}}">
+                        <img src="{{instituciones[2].imagen4}}">
+                        <img src="{{instituciones[2].imagen5}}">
+                    </div>
+                </div>
+            </div>
+         <!-- ******* --> 
+         
+         <!-- Contenido del div animado -->
+            <div class="text-sm md:text-2xl text-justify flex justify-center flex-col items-center text-center ">
+                <p>INOCISA Los Mochis</p>
+                <p>Enero2015-Diciembre2015 Enero2019-Agosto2020</p>
+         
+                <p class="text-2xl text-center md:text-4xl font-black">Actividades Realizadas</p>
+                <li >Encargado del departamento de informática </li>
+                    <li>Desarrollo e implementación del sitio web de la Empresa</li>
+                    <li>implementación de Offimatica para optimización de procesos dentro de la empresa</li>
+                    <li>Encargado del area de Soporte Técnico</li>
+                <div class="text-blue-400 hover:text-blue-500 h-16 p-2">
+                    <a class="efectolink" href="https://www.sacti.mx/" target="_blank">Link</a>
+
+                </div>
+
+            </div>
+            
+    </div>
+    
+</div>
+
+</div>
+<!-- ***** -->
+
+
+
