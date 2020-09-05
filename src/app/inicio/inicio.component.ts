@@ -27,15 +27,18 @@ imagenportada:string="assets/Imagenes/imagenportada.jpg"
 public icontenedores:any[]=[
 
   {
-    rotulo:"Repositorios"
+    rotulo:"Repositorios",
+    link:"https://github.com/JubenalCasCon?tab=repositories"
   },
 
   {
-    rotulo:"Diseños"
+    rotulo:"Diseños",
+    link:"https://drive.google.com/file/d/1X_OPKUb7bykMVSTsVcaPYx4Hy8tS5wxS/view?usp=sharing"
   },
 
   {
-    rotulo:"Notas"
+    rotulo:"Notas",
+    link:"https://drive.google.com/drive/folders/168fgF4bp1raQFbSpURl4b-e4oO7y3a7Q?usp=sharing"
   }
 
 ]
