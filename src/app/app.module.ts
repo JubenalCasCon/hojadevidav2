@@ -14,6 +14,11 @@ import { EstudiosComponent } from './estudios/estudios.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { DocumentosComponent } from './documentos/documentos.component';
 import { PaginaprincipalComponent } from './paginaprincipal/paginaprincipal.component';
+import {HttpClientModule} from '@angular/common/http';
+import {FormsModule} from '@angular/forms'
+import {MessageService} from './services/message.service'
+import {ReactiveFormsModule} from '@angular/forms'
+import { from } from 'rxjs';
 
 
 const routes:Routes=[{path:'',component:PaginaprincipalComponent}]
@@ -36,9 +41,12 @@ const routes:Routes=[{path:'',component:PaginaprincipalComponent}]
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(routes),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
